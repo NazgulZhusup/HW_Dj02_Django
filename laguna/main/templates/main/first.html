@@ -1,0 +1,62 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+<title>Первая страница - Laguna City</title>
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+    <h1>{{ caption }} - Воплощение безмятежности</h1>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img1.jpg' %}" alt="Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>Райский уголок</p>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img2.jpg'' %}" alt="Image 2" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>Для чего человеку Рай? Чтобы отдохнуть наконец от суеты, телефонных звонков, расслабиться под лучами солнца, а не вот это вот все</p>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img3.jpg' %}" alt="Image 3" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>А знаете, что про это место знают не все. А тот, кто знает, будет держать в секрете.</p>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img4.jpg' %}" alt="Image 4" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>Потому что главной ценностью этого места является покой, тишина и единение с природой</p>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img5.jpg' %}" alt="Image 5" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>Ведь не зря Laguna City называют Воплощением безмятежности</p>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'main/img/img6.jpg' %}" alt="Image 6" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>Лечите душу ощущениями (с) Оскар Уайльд</p>
+        </div>
+    </div>
+</div>
+
+{% include 'main/footer.html'%}
+{% endblock %}
